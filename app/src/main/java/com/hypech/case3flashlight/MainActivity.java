@@ -38,7 +38,7 @@ import android.widget.Toast;
  * Launcher Activity that demonstrates the use of runtime permissions for Android M and newer.
  * This Activity requests permissions to access the camera and flashlight
  * 1. ({@link android.Manifest.permission#CAMERA})
- * when the 'Show Camera Preview' button is clicked to start  {@link CameraPreviewActivity} once
+ * when the 'Show Camera Preview' button is clicked to start  {@link } once
  * the permission has been granted.
  * <p>
  * First, the status of the Camera permission is checked using {@link
@@ -49,7 +49,7 @@ import android.widget.Toast;
  * returned to the
  *
  * 4. {@link androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback}, which starts
- * {@link CameraPreviewActivity} if the permission has been granted.
+ * {@link } if the permission has been granted.
  * <p>
  * Note that there is no need to check the API level, the support library
  * already takes care of this. Similar helper methods for permissions are also available in
@@ -77,7 +77,13 @@ public class MainActivity extends AppCompatActivity {
         btnFlashLight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                askPermission(Manifest.permission.CAMERA, CAMERA_REQUEST_CODE);
+                if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                    // We already have permission do what you want
+                    flashLight();
+                } else {
+                    // We Do not have permission
+                    ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
+                }
             }
         });
     }
@@ -119,19 +125,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void askPermission(String permission, int requestCode) {
-        if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
-            // We Do not have permission
-            ActivityCompat.requestPermissions(this, new String[]{permission}, requestCode);
-        } else {
-            // We already have permission do what you want
-            flashLight();
-        }
-    }
-
     @Override
     public void onRequestPermissionsResult ( int requestCode, @NonNull String[] permissions,
-                                             @NonNull int[] grantResults){
+                                             @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case CAMERA_REQUEST_CODE:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
