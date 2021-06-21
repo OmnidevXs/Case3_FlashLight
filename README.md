@@ -34,12 +34,6 @@ Screenshots
 Getting Started
 ---------------
 
-This sample uses the Gradle build system. To build this project, use the
-"gradlew build" command or use "Import Project" in Android Studio.
-
-Getting Started
----------------
-
 * Android Studio: Download this case from github and open it directly in Android Studio.
 * Other IDE: This case uses the Gradle build system. To build this project, use the "gradlew build" command or use "Import Project".
 
