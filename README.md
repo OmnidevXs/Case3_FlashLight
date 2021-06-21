@@ -29,7 +29,7 @@ Pre-requisites
 Screenshots
 -------------
 
-<img src="screenshots/screenshot-1.png" height="400" alt="Screenshot"/> 
+<img src="screenshots/screenshot.png" height="400" alt="Screenshot"/> 
 
 Getting Started
 ---------------
@@ -37,17 +37,27 @@ Getting Started
 This sample uses the Gradle build system. To build this project, use the
 "gradlew build" command or use "Import Project" in Android Studio.
 
+Getting Started
+---------------
+
+* Android Studio: Download this case from github and open it directly in Android Studio.
+* Other IDE: This case uses the Gradle build system. To build this project, use the "gradlew build" command or use "Import Project".
+
 Support
 -------
 
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
+1. GitHub: https://github.com/hypech/
+2. Stack Overflow: https://stackoverflow.com/story/hypech
+3. Twitter: https://twitter.com/hypechor
+4. Youtube: https://www.youtube.com/channel/UCtkxCO5vVSvWMN-HMs0JZyg
+5. Tiktok: https://www.tiktok.com/@androidcase
+6. http://hypech.github.io
+7. http://hypech.com
+8. info@hypech.com
 
-If you've found an error in this sample, please file an issue:
-https://github.com/android/permissions-samples
+If you've found an error in this case, please file an issue on top left of this screen besides <>code.
 
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
-
+Patches are encouraged, and may be submitted by forking this project and submitting a pull request through GitHub. 
 
  <pre>
   Copyright 2021 The Learning Android with Cases Open Source Project
