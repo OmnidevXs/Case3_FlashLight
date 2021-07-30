@@ -39,15 +39,13 @@ Getting Started
 
 Support
 -------
-
-1. GitHub: https://github.com/hypech/
-2. Stack Overflow: https://stackoverflow.com/story/hypech
-3. Twitter: https://twitter.com/hypechor
-4. Youtube: https://www.youtube.com/channel/UCtkxCO5vVSvWMN-HMs0JZyg
-5. Tiktok: https://www.tiktok.com/@androidcase
-6. http://hypech.github.io
-7. http://hypech.com
-8. info@hypech.com
+1. [Hands-on App Development in Android Studio 4.2](https://www.amazon.com/gp/product/B096TL8VMP) (22 Complete Android Cases with Step-by-Step Instruction to Grow from Novice to Android Expert)
+2. [Preview of Hands-on App Development in Android Studio 4.2](https://play.google.com/books/reader?id=9g8zEAAAQBAJ)
+3. Email: hypech.com@gmail.com
+4. GitHub: https://github.com/hypech/
+5. Youtube: https://youtu.be/-fGgwyymOyI
+6. Twitter: https://twitter.com/hypechor
+7. Web: http://hypech.com
 
 If you've found an error in this case, please file an issue on top left of this screen besides <>code.
 
