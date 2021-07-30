@@ -26,22 +26,17 @@ Pre-requisites
 - Android Build Tools v28.0.3
 - Android Support Repository
 
-Screenshots
--------------
-
+## Screenshots
 <img src="screenshot.png" height="400" alt="Screenshot"/> 
 
-Getting Started
----------------
-
+## Getting Started
 * Android Studio: Download this case from github and open it directly in Android Studio.
 * Other IDE: This case uses the Gradle build system. To build this project, use the "gradlew build" command or use "Import Project".
 
-Support
--------
-1. [Hands-on App Development in Android Studio 4.2](https://www.amazon.com/gp/product/B096TL8VMP) (22 Complete Android Cases with Step-by-Step Instruction to Grow from Novice to Android Expert)
-2. [Preview of Hands-on App Development in Android Studio 4.2](https://play.google.com/books/reader?id=9g8zEAAAQBAJ)
-3. Email: hypech.com@gmail.com
+## Support
+1. Email: hypech.com@gmail.com
+2. Paperback: [Hands-on App Development in Android Studio 4.2](https://www.amazon.com/gp/product/B096TL8VMP) (22 Complete Android Cases with Step-by-Step Instruction to Grow from Novice to Android Expert)
+3. Preview: [Hands-on App Development in Android Studio 4.2](https://play.google.com/books/reader?id=9g8zEAAAQBAJ)
 4. GitHub: https://github.com/hypech/
 5. Youtube: https://youtu.be/-fGgwyymOyI
 6. Twitter: https://twitter.com/hypechor
