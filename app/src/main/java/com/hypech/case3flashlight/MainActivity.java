@@ -82,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
                     flashLight();
                 } else {
                     // We Do not have permission
-                    ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
+                    ActivityCompat.requestPermissions(MainActivity.this,
+                            new String[]{Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
                 }
             }
         });
@@ -136,7 +137,6 @@ public class MainActivity extends AppCompatActivity {
                             hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
                     Toast.makeText(this, "Camera Permission Granted", Toast.LENGTH_LONG).show();
                     flashLight();
-
                 } else {
                     Toast.makeText(this, "Camera Permission Denied", Toast.LENGTH_LONG).show();
                 }
